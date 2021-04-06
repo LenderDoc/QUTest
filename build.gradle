@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 plugins {
-    id "org.sonarqube" version "3.0"
+    id "org.sonarqube" version "3.1.1"
 }
 
 group 'org.example'
@@ -23,7 +23,9 @@ test {
 
 sonarqube {
     properties {
-        property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", "dbe7da58fd87db265373040af688a8d82c382e14"
+         // property "sonar.projectName", "Test Name" // project name can be omitted. In the case the projectName is used
+        //  property "sonar.projectKey", "project_key" // project key can be omitted. In the case the projectName is used
+        //   property "sonar.host.url", "http://localhost:9000"
+        //  property "sonar.login", "c59035e167231a094c576b2c80f4e4a44e580956" // create any sonarqube project and generate a token for a user.
     }
 }
