@@ -27,7 +27,7 @@ public class Main {
 
         waitingTimeLinesProcessor.print();   // prints the result in to the console
 
-        for( int i = 5 ; i >= 0 ; i++ )
-            System.out.println(i);
+       // for( int i = 5 ; i >= 0 ; i++ )
+         //   System.out.println(i);
     }
 }
