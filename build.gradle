@@ -20,12 +20,14 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-sonarqube {
-    properties {
+//gradlew build sonarqube --info -Dsonar.login=c59035e167231a094c576b2c80f4e4a44e580956 -Dsonar.host.url="http://localhost:9000"
+//gradlew build sonarqube --info -Dsonar.login=c59035e167231a094c576b2c80f4e4a44e580956 -Dsonar.host.url="http://172.17.90.193:9000/"
+//gradlew build sonarqube --info -Dsonar.login=$SONAR_TOKEN -Dsonar.host.url=$SONAR_HOST_URL
+//sonarqube {
+//    properties {
          // property "sonar.projectName", "Test Name" // project name can be omitted. In the case the projectName is used
         //  property "sonar.projectKey", "project_key" // project key can be omitted. In the case the projectName is used
         //   property "sonar.host.url", "http://localhost:9000"
         //  property "sonar.login", "c59035e167231a094c576b2c80f4e4a44e580956" // create any sonarqube project and generate a token for a user.
-    }
-}
+//    }
+//}
