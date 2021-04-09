@@ -6,6 +6,7 @@ name: Java CI with Gradle Sonar Qube TEST
 on:
   schedule:
     - cron:  '*/5 * * * *'
+  workflow_dispatch:
 
 jobs:    
   build:
