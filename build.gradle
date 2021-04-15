@@ -21,7 +21,7 @@ test {
     useJUnitPlatform()
 }
 //gradlew build sonarqube --info -Dsonar.login=c59035e167231a094c576b2c80f4e4a44e580956 -Dsonar.host.url="http://localhost:9000"
-//gradlew build sonarqube --info -Dsonar.login=c59035e167231a094c576b2c80f4e4a44e580956 -Dsonar.host.url="http://172.17.90.193:9000/"
+//gradlew build sonarqube --info -Dsonar.login=c59035e167231a094c576b2c80f4e4a44e580956 -Dsonar.host.url="http://178.136.7.246:9000/"
 //gradlew build sonarqube --info -Dsonar.login=$SONAR_TOKEN -Dsonar.host.url=$SONAR_HOST_URL
 //sonarqube {
 //    properties {
