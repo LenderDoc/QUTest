@@ -23,7 +23,7 @@ test {
 sonarqube {
     properties {
         property 'sonar.host.url', 'https://sonarcloud.io'
-        property 'sonar.organization', 'testOrg_7778'
+        property 'sonar.organization', 'lenderdoc'
  //       property 'sonar.organization', 'sonarsource'
  //       property 'sonar.projectKey', 'SonarSource_sonarcloud-github-action-samples'
     }
