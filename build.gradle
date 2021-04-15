@@ -18,6 +18,16 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+
+sonarqube {
+    properties {
+        property 'sonar.host.url', 'https://sonarcloud.io'
+ //       property 'sonar.organization', 'sonarsource'
+ //       property 'sonar.projectKey', 'SonarSource_sonarcloud-github-action-samples'
+    }
+}
+
 //gradlew build sonarqube --info -Dsonar.login=c59035e167231a094c576b2c80f4e4a44e580956 -Dsonar.host.url="http://localhost:9000"
 //gradlew build sonarqube --info -Dsonar.login=c59035e167231a094c576b2c80f4e4a44e580956 -Dsonar.host.url="http://178.136.7.246:9000/"
 //gradlew build sonarqube --info -Dsonar.login=$SONAR_TOKEN -Dsonar.host.url=$SONAR_HOST_URL
