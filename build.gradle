@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id "org.sonarqube" version "3.1.1"
+    id "org.sonarqube" version "3.3"
 }
 
 group 'org.example'
@@ -21,12 +21,11 @@ test {
 
 
 sonarqube {
-    properties {
-        property 'sonar.host.url', 'https://sonarcloud.io'
-        property 'sonar.organization', 'lenderdoc'
- //       property 'sonar.organization', 'sonarsource'
- //       property 'sonar.projectKey', 'SonarSource_sonarcloud-github-action-samples'
-    }
+  properties {
+    property "sonar.projectKey", "LenderDoc_QUTest"
+    property "sonar.organization", "lenderdoc"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 //gradlew build sonarqube --info -Dsonar.login=c59035e167231a094c576b2c80f4e4a44e580956 -Dsonar.host.url="http://localhost:9000"
